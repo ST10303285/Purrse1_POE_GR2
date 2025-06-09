@@ -1,38 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#A8B98B"
+    android:padding="32dp">
 
     <LinearLayout
-        android:padding="16dp"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <!-- Date Range -->
         <TextView
             android:id="@+id/tvDateRange"
             android:text="Date Range: June 1 - June 30"
             android:textStyle="bold"
             android:textSize="18sp"
+            android:textColor="#FFFFFF"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <!-- Daily Expenses -->
         <TextView
             android:id="@+id/tvDailyExpenses"
             android:layout_marginTop="16dp"
             android:text="Today's Spending: R0.00"
             android:textSize="16sp"
+            android:textColor="#FFFFFF"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <!-- Recent Expenses -->
         <TextView
             android:layout_marginTop="16dp"
             android:text="Recent Expenses"
             android:textStyle="bold"
             android:textSize="16sp"
+            android:textColor="#FFFFFF"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -45,15 +46,20 @@
         <Button
             android:id="@+id/btnViewMore"
             android:text="View More"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <!-- Bar Graph -->
-        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
             android:layout_marginTop="16dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#4F5C2D"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:layout_marginTop="24dp"
             android:text="Spending by Category"
             android:textStyle="bold"
             android:textSize="16sp"
+            android:textColor="#FFFFFF"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -61,14 +67,24 @@
             android:id="@+id/barChart"
             android:layout_width="match_parent"
             android:layout_height="300dp" />
+
+        <Button
+            android:id="@+id/btnMonthlyComparison"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Compare Monthly Expenses"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="24dp"
+            android:textAllCaps="false"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#4F5C2D" />
+
         <ImageView
             android:id="@+id/ivCat"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:layout_alignParentEnd="true"
-            android:layout_margin="16dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="24dp"
             android:src="@drawable/cat1" />
-
-
     </LinearLayout>
 </ScrollView>

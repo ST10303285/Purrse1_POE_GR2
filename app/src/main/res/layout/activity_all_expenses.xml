@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#A8B98B"
     android:orientation="vertical"
-    android:padding="16dp"
+    android:padding="24dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -9,34 +10,40 @@
         android:text="Category"
         android:textStyle="bold"
         android:textSize="14sp"
+        android:textColor="#4F5C2D"
         android:layout_marginBottom="4dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <Spinner android:id="@+id/spinnerCategory"
+    <Spinner
+        android:id="@+id/spinnerCategory"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="48dp"/>
+        android:background="@drawable/spinner_bg"
+        android:minHeight="48dp" />
 
     <TextView
         android:text="Sort by Amount"
         android:textStyle="bold"
         android:textSize="14sp"
+        android:textColor="#4F5C2D"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="4dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <Spinner android:id="@+id/spinnerSort"
+    <Spinner
+        android:id="@+id/spinnerSort"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="48dp"
-        />
+        android:background="@drawable/spinner_bg"
+        android:minHeight="48dp" />
 
     <TextView
         android:text="Sort by Date"
         android:textStyle="bold"
         android:textSize="14sp"
+        android:textColor="#4F5C2D"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="4dp"
         android:layout_width="wrap_content"
@@ -46,28 +53,31 @@
         android:id="@+id/spinnerDateSort"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:minHeight="48dp"/>
-
+        android:background="@drawable/spinner_bg"
+        android:minHeight="48dp" />
 
     <TextView
         android:id="@+id/tvDateRange"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Select Date Range"
+        android:textColor="#D37878"
+        android:background="@drawable/rounded_bg_white"
         android:padding="12dp"
         android:layout_marginTop="8dp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvAllExpenses"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp" />
 
     <ImageView
         android:id="@+id/ivCat"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:layout_alignParentEnd="true"
-        android:layout_margin="16dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp"
         android:src="@drawable/cat1" />
 </LinearLayout>

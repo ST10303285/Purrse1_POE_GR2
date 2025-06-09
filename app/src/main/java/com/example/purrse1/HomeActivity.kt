@@ -123,7 +123,7 @@ class HomeActivity : AppCompatActivity() {
                     database.child("totalBudget").get().addOnSuccessListener { budgetSnap ->
                         val totalBudget = budgetSnap.getValue(Double::class.java) ?: 0.0
                         val savings = totalIncome - totalBudget
-                        savingsText.text = "Savings: R%.2f".format(savings)
+                        savingsText.text = "Savings\nR%.2f".format(savings)
                     }
                 }
                 override fun onCancelled(error: DatabaseError) {}

@@ -9,23 +9,26 @@
         android:id="@+id/categoryText"
         android:textSize="16sp"
         android:textStyle="bold"
+        android:textColor="@android:color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <ProgressBar
         android:id="@+id/budgetProgress"
+        style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="10dp"
         android:max="100"
         android:progress="0"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:progressTint="@color/holo_pink_light" />
+        android:progressTint="@color/holo_pink_light"
+        android:layout_marginVertical="4dp" />
 
     <TextView
         android:id="@+id/percentText"
         android:textSize="14sp"
+        android:text="0%"
+        android:textColor="@android:color/darker_gray"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="0%" />
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

@@ -76,6 +76,11 @@ class TrendsActivity : AppCompatActivity() {
         btnViewMore.setOnClickListener {
             startActivity(Intent(this, AllExpensesActivity::class.java))
         }
+
+        val btnMonthlyComparison = findViewById<Button>(R.id.btnMonthlyComparison)
+        btnMonthlyComparison.setOnClickListener {
+            startActivity(Intent(this, MonthlyComparisonActivity::class.java))
+        }
     }
 
     private fun loadDailySpending() {

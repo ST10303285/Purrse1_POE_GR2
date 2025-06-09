@@ -1,81 +1,112 @@
-<?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#A8B98B"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="24dp">
 
     <LinearLayout
         android:orientation="vertical"
-        android:padding="16dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
 
         <EditText
             android:id="@+id/etAmount"
             android:hint="Amount"
             android:inputType="numberDecimal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="48dp"/>
+            android:layout_height="48dp"
+            android:background="@drawable/rounded_input"
+            android:padding="12dp"
+            android:textColorHint="#4F5C2D"
+            android:layout_marginBottom="16dp" />
 
         <EditText
             android:id="@+id/etDescription"
             android:hint="Description"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="48dp"/>
+            android:layout_height="48dp"
+            android:background="@drawable/rounded_input"
+            android:padding="12dp"
+            android:textColorHint="#4F5C2D"
+            android:layout_marginBottom="16dp" />
 
         <Button
             android:id="@+id/btnSelectCategory"
             android:text="Select Category"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="48dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#4F5C2D"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:layout_marginBottom="8dp" />
 
         <TextView
             android:id="@+id/tvSelectedCategory"
             android:text="No category selected"
+            android:textColor="#4F5C2D"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="8dp" />
+            android:padding="8dp"
+            android:layout_marginBottom="16dp" />
 
         <Button
             android:id="@+id/btnSelectDate"
             android:text="Select Date"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="48dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#4F5C2D"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:layout_marginBottom="8dp" />
 
         <TextView
             android:id="@+id/tvSelectedDate"
             android:text="No date selected"
+            android:textColor="#4F5C2D"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="8dp" />
+            android:padding="8dp"
+            android:layout_marginBottom="16dp" />
 
         <ImageView
             android:id="@+id/ivReceipt"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:scaleType="centerCrop"
-            android:visibility="gone" />
+            android:visibility="gone"
+            android:layout_marginBottom="16dp" />
 
         <Button
             android:id="@+id/btnSelectImage"
             android:text="Add Receipt Image (optional)"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="48dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#4F5C2D"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:layout_marginBottom="24dp" />
 
         <Button
             android:id="@+id/btnSubmit"
             android:text="Add Expense"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp" />
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#D37878"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:layout_marginBottom="24dp" />
 
         <ImageView
             android:id="@+id/ivCat"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:layout_alignParentEnd="true"
-            android:layout_margin="16dp"
-            android:src="@drawable/cat1" />
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/cat1"
+            android:layout_gravity="end"
+            android:layout_marginTop="16dp" />
     </LinearLayout>
 </ScrollView>

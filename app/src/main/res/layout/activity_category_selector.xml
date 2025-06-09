@@ -1,29 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:padding="16dp"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#A8B98B"
+    android:padding="32dp">
+
+    <TextView
+        android:id="@+id/titleCategories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Categories"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"/>
 
     <ListView
         android:id="@+id/listViewCategories"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_below="@id/titleCategories"
+        android:layout_above="@+id/btnCreateCategory"
+        android:divider="#4F5C2D"
+        android:dividerHeight="1dp"
+        android:layout_marginTop="16dp" />
 
     <Button
         android:id="@+id/btnCreateCategory"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
         android:text="Create New Category"
-        android:layout_marginTop="12dp"/>
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#4F5C2D"
+        android:textAllCaps="false"
+        android:layout_marginBottom="90dp"/>
 
     <ImageView
         android:id="@+id/ivCat"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_margin="16dp"
         android:src="@drawable/cat1" />
-</LinearLayout>
 
+</RelativeLayout>

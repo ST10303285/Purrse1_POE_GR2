@@ -1,67 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:padding="16dp"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#A8B98B"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="32dp">
 
-    <!-- Monthly Budget -->
     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="16dp">
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Your Monthly Budget"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp" />
 
         <EditText
             android:id="@+id/editTotalBudget"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#4F5C2D"
             android:hint="Enter total monthly budget"
             android:inputType="numberDecimal"
-            android:minHeight="48dp"/>
+            android:textColor="#FFFFFF"
+            android:textColorHint="#DDDDDD"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/btnAssignBudget"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Assign Budget"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#4F5C2D"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btnSaveTotalBudget"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:text="Save"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#4F5C2D"
+            android:textAllCaps="false" />
+
+        <!-- RecyclerView container -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCategoryBudgets"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Save" />
+            android:layout_marginTop="20dp"
+            android:nestedScrollingEnabled="false" />
 
+        <ImageView
+            android:id="@+id/ivCat"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/cat1" />
     </LinearLayout>
-
-    <!-- Assign Budget Button -->
-    <Button
-        android:id="@+id/btnAssignBudget"
-        android:text="Assign Budget"
-        android:layout_marginTop="16dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <!-- Categories and Graphs -->
-    <TextView
-        android:text="Budgets by Category"
-        android:layout_marginTop="24dp"
-        android:textStyle="bold"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvCategoryBudgets"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:paddingTop="16dp" />
-
-    <ImageView
-        android:id="@+id/ivCat"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_alignParentEnd="true"
-        android:layout_margin="16dp"
-        android:src="@drawable/cat1" />
-
-</LinearLayout>
-
-
-
+</ScrollView>

@@ -1,28 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:padding="24dp"
-    android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="32dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#A8B98B">
 
-    <EditText
-        android:id="@+id/incomeEditText"
-        android:hint="Enter Monthly Income"
-        android:inputType="numberDecimal"
+    <LinearLayout
+        android:id="@+id/incomeLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="48dp"/>
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
 
-    <Button
-        android:id="@+id/saveIncomeButton"
-        android:text="Save Income"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/incomeEditText"
+            android:hint="Enter Monthly Income"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="#4F5C2D"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#DDDDDD"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/saveIncomeButton"
+            android:text="Save Income"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#4F5C2D"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
     <ImageView
         android:id="@+id/ivCat"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_margin="16dp"
         android:src="@drawable/cat1" />
-</LinearLayout>
+</RelativeLayout>

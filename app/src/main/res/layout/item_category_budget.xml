@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_item_background"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textCategoryName"
+        android:text="Category Name"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#4F5C2D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/editCategoryAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#A8B98B"
+        android:hint="Enter amount"
+        android:inputType="numberDecimal"
+        android:textColor="#4F5C2D"
+        android:textColorHint="#77875D"
+        android:padding="10dp"/>
+</LinearLayout>
