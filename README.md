@@ -1,152 +1,146 @@
-  Purrse: This Mobile Application is a Personal Expense Tracking App.
- Purpose of the App:
-Purrse is a mobile expense tracking app designed to help users monitor their spending habits, set monthly goals, and make smarter financial decisions. It also allows users to add expenses by category, track their progress against set goals, and visualize spending trends through interactive graphs. 
-This Application was built as part of our Open-Source Programming module and reflects feedback from a working prototype. It is optimized to run on an actual mobile device (Android), and not on an emulator anymore. 
- Design Considerations:
-•	User-friendly and user-centred design
-•	Simple and intuitive navigation
-•	Clean UI with accessible colour schemes
-•	Responsive and seamless layout for different screen sizes
-•	Real-time validation for forms
+# 🐾 Purrse – Personal Expense Tracker App
 
- Feature-Driven Layout:
-•	Home Screen: Overview of spending and quick action buttons. 
-•	Add Expense Screen: Fast input with dropdowns and a date picker.
-•	Add New Expense Category Screen: Allows users to add a custom expense category to organise their spending in a better and more efficient way. 
-•	Category Management Screen: Allows users to manage their expense categories. Users can search existing categories, and view them in a scrollable list, as well as add new ones.
-•	Goals Activity Screen: Lets users view and manage their spending goals, including their minimum and maximum budget limits for different categories or time periods. 
-•	Login Screen: This is the users entry point into the app, allowing them secure access using a username and password. It also includes navigation to account creation. 
-•	Main Activity Screen: This screen is the main dashboard or the Home page after a successful login from the user. It was designed to give users access to the core functionality of the app. 
-•	Register Screen: Allows new users to create an account. UI is user-friendly, visually appealing and includes essential input validation opportunities. 
-•	Welcome Screen: This is the first screen that users will see when they launch the app. It serves as a welcome screen and introduces users to the app in a friendly, visually appealing way before navigating them to the login or registration page. 
+**Purrse** is a mobile expense tracking app designed to help users monitor their spending habits, set monthly goals, and make smarter financial decisions. This app was created as part of the Open-Source Programming module at Varsity College and is optimized for real devices (Android 10+). With an intuitive UI and Firebase backend, Purrse makes financial awareness fun and accessible.
 
- Data and Security:
-•	RealTime data storage (Firebase)
-•	User authentication and session management
-•	safe input handling and validation
- Core Features:
-•	Add, edit, and delete expense records
-•	View expenses by category
-•	Set monthly minimum and maximum spending goals
-•	Visual feedback on whether the user is within their budget goals
-•	Interactive graphs showing spending trends over a selected period
-•	Cloud database for persistent, multi-device access
+---
 
+## 🎯 Purpose of the App
 
+Purrse empowers users to:
+- Add expenses by category
+- Track progress against monthly goals
+- Visualize trends with interactive graphs
+- Compare savings and spending by month
 
+---
 
- Custom-Added Features:
-•	Monthly expenses: app gives a clear data table of the expenses for each month so uses can compare.
-•	Savings: Users can see their savings based on the income and budgets
- Graphs and Visual Feedback:
-Spending Graph: Displays total amount spent per category over a selectable data range.
-Min/Max Goal Display: Shows goal lines on the graph for easy comparison.
-Progress Bar/Feedback: A visual indicator (coloured progress bar and symbols) tells users if they are within the budget.
-Example: 
+## ✨ Design Considerations
 
+- 💡 User-friendly, centered on ease of use
+- 🎨 Clean, accessible color palette
+- 🧭 Simple and intuitive navigation
+- 📱 Responsive layout for all screen sizes
+- ✅ Real-time validation on forms
 
+---
 
+## 📲 Feature-Driven Layout
 
+| Screen | Description |
+|--------|-------------|
+| **Welcome Screen** | First impression screen with branding and a warm greeting. |
+| **Login/Register** | Secure authentication using Firebase. |
+| **Home Screen** | Overview of spending, quick access to features. |
+| **Add Expense** | Input expenses with category, date, and note. |
+| **Add Category** | Create custom categories for tailored budgeting. |
+| **Category Management** | Search, view, and manage all categories. |
+| **Goals Activity** | Assign total and per-category budgets. |
+| **Main Activity** | Central dashboard with income, expenses, trends, and badges. |
 
+---
 
+## 🔐 Data and Security
 
+- 🔒 Firebase Authentication for login/register
+- 🔁 Realtime Database for syncing data
+- 🧹 Input validation to prevent data injection or errors
 
- Online Data Storage:
-•	All user data is stored in Firebase Realtime Database.
-•	Data syncs automatically across sessions and devices.
-•	Users can continue where they left off even after reinstalling the app.
- Automated Testing and GitHub Actions:
-GitHub Actions is used for Continuous Integration. Every push runs a workflow that:
-•	Builds the app.
-•	Installs dependencies.
-•	Runs automated tests to ensure the app functions correctly. 
- Demonstration Video:
-Demo Video Link: 
+---
 
-Includes:
-•	Real-time usage on an Android Phone.
-•	Voice-over explanation.
-•	Proof of data being saved and retrieved online.
-•	Explanation of all of the apps features. 
- Technology/Tools Used:
-Mobile UI: Android Studio
-App Design: Figma
-Database and Authentication: Firebase
-Version Control: GitHub
-Automated Testing: GitHub Actions
-Video and Voice Over: 
+## 🔧 Core Features
 
- Authors:
-Names: Faeeza Reynolds & Wadiha Boat
-Student Numbers: st10314608 & st10303285
-Institution: Varsity College
-Module: PROG7313 (Open Source)
+- ➕ Add, edit, delete expenses
+- 📅 Categorized expense views
+- 🎯 Monthly budget goals (min/max)
+- 📉 Graphs for budget vs actuals
+- 💾 Data persistence across devices
+- 🧮 View savings based on income vs expenses
 
- Additional Notes:
-•	Make sure that there is a stable internet connection for the online database features.
-•	Graphs and goal tracking require at least some expenses data input.
-•	For optimal performance, it is advised that Android 10 or later is to be used. 
+---
 
- How to Run the App:
-Prerequisites
-•	Latest Version of Android Studio should be Installed.
-•	Java Development Kit to be Installed (JDK).
-•	Gradle (Integrated into Android Studio)
-•	Android Emulator or Physical Android Device Connected. 
+## 📊 Graphs & Visual Feedback
 
- Steps to Run the App:
-•	Clone the Repository - using Android Studio directly. Or, download the ZIP file directly from GitHub and extract it.
-•	Open the project in Android Studio: Open Android Studio, then select File, Click on Open and select the Purrse Folder. 
-•	Click “Trust Project” if prompted.
+- **Spending Graph**: Shows total spent per category
+- **Min/Max Goal Display**: Shows limit lines on graphs
+- **Progress Feedback**: Color-coded bars to indicate goal status
 
+> 🖼️ *Example screenshots go here!*
 
+---
 
- Syncing the Gradle:
-Android Studio will automatically start to sync the project, but it can also be done manually:
-•	Click “File”, then “Sync Project with Gradle Files”.
-All the dependencies should load without any errors. 
+## ☁️ Online Data Storage
 
- Setup Emulator or Connect a Device:
-•	Run the App on an Android Device (Enable USB debugging)
-•	To run on an emulator: Go to “Device Manager” in “Tools” and create or launch a virtual device.
- Build and Run the App:
-Click “Build” and then “Make Project”
-Select the connected device at the top
-Press Shift + F10 or click the green run arrow 
-The app will now launch on the device
+- All data stored in **Firebase Realtime Database**
+- Data syncs across sessions
+- Survives app reinstall and login
 
+---
 
+## 🧪 Automated Testing & CI
 
+GitHub Actions used for CI:
+- ✅ Build the app
+- 📦 Install dependencies
+- 🧪 Run automated tests
 
- 
-How to Use the App:
-Welcome Screen:
-•	Tap “Continue” to enter the App.
-Register Screen:
-•	If you are a new user, enter a Username, Email, Password.
-•	Tap “Register” to create your account.
-Login Screen:
-•	Enter your Username and Password.
-•	Tap “Login” to access the dashboard.
-Category Management:
-•	View summary of expenses, balance, savings and income where users can enter their incomes.
-•	Shows top spending categories 
-•	Bottom navigation to go to different screens
-Expense Tracking:
-•	Add expenses under specific categories.
-•	Each expense includes:
-•	Amount
-•	Category
-•	Date
-•	Description
-•	View your expenses in a list format.
+---
 
- Goals Page:
-•	For assigning total budget for month
-•	Assign budget for categories
-•	Progress bar of remaining budget for each category
+## 🎬 Demonstration Video
 
- Extra Additional Notes:
-•	Data is stored locally in the app’s database.
-•	User-friendly UI design for ease of use and efficient accessibility.
-•	Optimized for budgeting and daily expense tracking. 
+📹 **Demo Link:** *[Insert your YouTube or Drive link here]*
+
+**Includes:**
+- Real-time app usage on Android device
+- Voice-over explanations
+- Data saving & retrieval in Firebase
+- Walkthrough of all core features
+
+---
+
+## 🛠️ Technologies Used
+
+| Tool | Purpose |
+|------|---------|
+| **Android Studio** | UI and App Logic |
+| **Firebase** | Auth + Database |
+| **Figma** | UI Mockups |
+| **GitHub** | Version Control |
+| **GitHub Actions** | Continuous Integration |
+| **VoiceOver Tools** | Demo narration |
+
+---
+
+## ✍️ Authors
+
+- 👩‍💻 Faeeza Reynolds – `st10314608`
+- 👩‍💻 Wadiha Boat – `st10303285`
+- 🎓 Institution: Varsity College
+- 📘 Module: PROG7313 (Open Source)
+
+---
+
+## ⚠️ Additional Notes
+
+- 📶 Internet connection is required for database features
+- 📈 Graphs and goals require data to be entered first
+- 📱 Best viewed on Android 10 or later
+- 💾 Data is saved locally and to the cloud
+
+---
+
+## 🧰 How to Run the App
+
+### ✅ Prerequisites
+
+- Android Studio (latest)
+- JDK 11+
+- Gradle (included with Android Studio)
+- Android Device or Emulator
+
+---
+
+### 🔽 Steps to Run
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/yourusername/purrse.git
