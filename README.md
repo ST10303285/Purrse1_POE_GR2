@@ -139,8 +139,21 @@ GitHub Actions used for CI:
 
 ---
 
-### 🔽 Steps to Run
+### 🔽 Step-by-Step Setup
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/yourusername/purrse.git
+#### 1. Clone the Repository
+
+You can do this via Android Studio or using Git:
+
+- **Option A: Android Studio**
+  1. Open Android Studio
+  2. Click `Get from Version Control`
+  3. Paste the repository URL:  
+     ```
+     https://github.com/yourusername/purrse.git
+     ```
+  4. Click **Clone**
+
+- **Option B: Git Command**
+  ```bash
+  git clone https://github.com/yourusername/purrse.git
