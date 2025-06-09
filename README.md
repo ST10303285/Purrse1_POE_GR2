@@ -87,7 +87,7 @@ GitHub Actions used for CI:
 
 ## 🎬 Demonstration Video
 
-📹 **Demo Link:** *[Insert your YouTube or Drive link here]*
+📹 **Demo Link:** *https://youtu.be/dAmrH--kFbc*
 
 **Includes:**
 - Real-time app usage on Android device
