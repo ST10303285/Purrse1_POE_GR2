@@ -150,10 +150,52 @@ You can do this via Android Studio or using Git:
   2. Click `Get from Version Control`
   3. Paste the repository URL:  
      ```
-     https://github.com/yourusername/purrse.git
+     https://github.com/VCCT-PROG7313-2025-G2/Purrse1_POE_GR2.git
      ```
   4. Click **Clone**
 
 - **Option B: Git Command**
   ```bash
-  git clone https://github.com/yourusername/purrse.git
+  https://github.com/VCCT-PROG7313-2025-G2/Purrse1_POE_GR2.git
+
+  ### ✅ 2. Open the Project in Android Studio
+
+1. Open **Android Studio**
+2. Navigate to `File → Open`
+3. Locate the cloned **Purrse** folder
+4. Select the folder and click **OK**
+5. If prompted, click **Trust Project**
+
+---
+
+### 🔄 3. Sync the Gradle Files
+
+Android Studio usually syncs automatically. If it doesn't:
+
+- Go to `File → Sync Project with Gradle Files`
+
+✅ Make sure all dependencies load without any errors.
+
+---
+
+### 📱 4. Set Up an Emulator or Connect a Physical Device
+
+**For a Physical Device**:
+- Enable **USB debugging** from **Developer Options**
+- Connect the device to your PC via USB
+
+**For an Emulator**:
+- Go to `Tools → Device Manager`
+- Create or start a virtual device  
+  📲 *Recommended: Android 10 (API 29) or higher*
+
+---
+
+### 🛠️ 5. Build and Run the App
+
+1. Click `Build → Make Project`
+2. Select your connected device or emulator from the device dropdown
+3. Press `Shift + F10`  
+   or click the green **Run ▶️** button in the toolbar
+
+🎉 **The app will now launch on your selected device!**
