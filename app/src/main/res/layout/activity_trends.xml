@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Date Range -->
+        <TextView
+            android:id="@+id/tvDateRange"
+            android:text="Date Range: June 1 - June 30"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Daily Expenses -->
+        <TextView
+            android:id="@+id/tvDailyExpenses"
+            android:layout_marginTop="16dp"
+            android:text="Today's Spending: R0.00"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Recent Expenses -->
+        <TextView
+            android:layout_marginTop="16dp"
+            android:text="Recent Expenses"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/layoutRecentExpenses"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnViewMore"
+            android:text="View More"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Bar Graph -->
+        <TextView
+            android:layout_marginTop="16dp"
+            android:text="Spending by Category"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+        <ImageView
+            android:id="@+id/ivCat"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/cat1" />
+
+
+    </LinearLayout>
+</ScrollView>
